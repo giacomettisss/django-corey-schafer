@@ -9,3 +9,7 @@ class Post(models.Model):
     content = models.TextField(max_length=512)
     date_posted = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
+        # ao consultar ele mudará o retorna, sendo <QuerySet [<Post: Blog 1>]> e não <QuerySet [<Post: Post object (1)>]>
