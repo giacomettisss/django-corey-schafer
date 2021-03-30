@@ -27,7 +27,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 DEBUG = os.environ.get('DJANGO_DEBUG')
 
 ALLOWED_HOSTS = [
-    'django-corey-schafer2.herokuapp.com'
+    'django-corey-schafer2.herokuapp.com',
+    'localhost'
 ]
 
 
